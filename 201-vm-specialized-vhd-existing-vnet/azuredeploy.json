@@ -53,6 +53,12 @@
       "metadata": {
         "description": "Unique DNS Name for the Public IP used to access the Virtual Machine."
       }
+    },
+    "NetworkInterfaceName": {
+			"type": "String",
+			"metadata": {
+				"description": "Name of the existing Network Interface."
+			}
     }
   },
   "variables": {
@@ -61,7 +67,7 @@
     "publicIPAddressType": "Dynamic",
     "vnetID": "[resourceId(parameters('existingVirtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks', parameters('existingVirtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/', parameters('subnetName'))]",
-    "nicName": "[parameters('vmName')]",
+    "nicName": "[parameters('NetworkInterfaceName')]",
     "publicIPAddressName": "[parameters('vmName')]"
   },
   "resources": [{
