@@ -55,10 +55,10 @@
       }
     },
     "NetworkInterfaceName": {
-			"type": "String",
-			"metadata": {
-				"description": "Name of the existing Network Interface."
-			}
+      "type": "String",
+      "metadata": {
+        "description": "Name of the existing Network Interface."
+      }
     }
   },
   "variables": {
