@@ -26,7 +26,11 @@
             "value": "Windows"
         },
         "vmSize": {
-            "value": "Standard_DS1"
-        }
+            "value": "Standard_DS1_v2"
+        },
+        
+        "NetworkInterfaceName": {
+			"value": "NICname"
+		}
     }
 }
